@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Logs and Metrics Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application allows users to fetch and view system logs and metrics through a web interface. It consists of two main screens: Logs and Metrics. Users can toggle between these screens using the Navbar. The project is built using React.js and leverages React Router for navigation and Chart.js for rendering metrics charts.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js installed on your local machine
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+ Install dependencies: npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Running the Application
 
-### `npm run build`
+The application will be accessible at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Development Flow
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project follows a typical React development flow:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Components**: Components are organized in the `src/components` directory. Each screen (Logs and Metrics) has its own component.
 
-### `npm run eject`
+2. **Routing**: React Router (v6) is used for navigation. Routes are defined in the `App.js` file.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **API Integration**: Mock APIs for Logs and Metrics are provided in the `src/api` directory. These APIs mimic the behavior of real APIs for fetching logs and metrics data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Styling**: Tailwind CSS (v3) is used for styling components. Tailwind utility classes are applied directly within the components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **State Management**: Component state and URL parameters are used for managing filters and states of Logs and Metrics screens.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. **Charts**: Chart.js (v3) is used to render metrics charts. Chart data is fetched from the Metrics API and displayed in the Metrics screen.
 
-## Learn More
+7. **Infinite Scroll and Pagination**: Logs screen implements infinite scroll for fetching previous logs as the user scrolls up. Pagination logic is handled within the Logs component.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Working Link: https://frontend-assignment-mocha-xi.vercel.app/
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
