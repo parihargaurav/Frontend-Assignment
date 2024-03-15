@@ -1,0 +1,30 @@
+.metrics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px;
+}
+
+.datetime-picker {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px; 
+}
+
+.datetime-picker label {
+  margin-right: 10px;
+}
+
+.chart-container {
+  width: 100%; 
+}
+
+.chart-container h3 {
+  text-align: center;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: auto !important;
+}

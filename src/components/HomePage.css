@@ -1,0 +1,12 @@
+.home-page {
+  background-color: rgb(65, 132, 160);
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.moving-text {
+  position: absolute; 
+  font-size: 24px; 
+}

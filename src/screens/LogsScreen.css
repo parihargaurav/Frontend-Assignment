@@ -1,0 +1,55 @@
+/* logsScreen.css */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal__bar {
+  background-color: #333;
+}
+
+.terminal__bar button {
+  margin-right: 10px;
+}
+
+.terminal__output {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.react-datepicker-wrapper input {
+  color: grey; 
+}
+
+
+.live-log {
+  color: yellow; 
+}
+
+.live-count {
+  cursor: pointer;
+  color: blue; 
+  margin-top: 10px;
+}
+
+
+.log-timestamp {
+  color: gray; 
+  margin-right: 5px; 
+}
