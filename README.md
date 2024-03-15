@@ -2,13 +2,10 @@
 
 This application allows users to fetch and view system logs and metrics through a web interface. It consists of two main screens: Logs and Metrics. Users can toggle between these screens using the Navbar. The project is built using React.js and leverages React Router for navigation and Chart.js for rendering metrics charts.
 
-## Getting Started
-
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-- Node.js installed on your local machine
+- Node.js 
 
 ### Installation
 
@@ -26,7 +23,7 @@ The project follows a typical React development flow:
 
 2. **Routing**: React Router (v6) is used for navigation. Routes are defined in the `App.js` file.
 
-3. **API Integration**: Mock APIs for Logs and Metrics are provided in the `src/api` directory. These APIs mimic the behavior of real APIs for fetching logs and metrics data.
+3. **API Integration**: Mock APIs for Logs and Metrics are provided in the `src/utils` directory. These APIs mimic the behavior of real APIs for fetching logs and metrics data.
 
 4. **Styling**: Tailwind CSS (v3) is used for styling components. Tailwind utility classes are applied directly within the components.
 
